@@ -55,41 +55,40 @@ header img {
    display: none;
 }
 
-.checkbox:checked ~ul {
+.checkbox:checked~ul {
    padding-top: 5%;
    display: block;
    position: absolute;
-z-index: 10;
+   z-index: 10;
    top: 7%;
    background-color: orange;
    width: 100%;
-height: 550vh;
-text-align: center;
+   height: 550vh;
+   text-align: center;
 }
 
-.checkbox:checked ~ ul li {
+.checkbox:checked~ul li {
    padding-bottom: 1.5em;
-   
+
 }
 
 
-.checkbox:checked ~ ul li a{
+.checkbox:checked~ul li a {
    text-decoration: none;
    color: white;
    font-size: 1.2em;
 }
 
-.checkbox:checked ~ .open {
+.checkbox:checked~.open {
    display: none;
 }
 
-.checkbox:checked ~ .close {
+.checkbox:checked~.close {
    display: block;
 }
 
-.checkbox:checked {
-   
-}
+.checkbox:checked {}
+
 /* Forside Styling */
 
 /* forside image */
@@ -123,6 +122,7 @@ footer {
 footer h3 {
    padding-bottom: 0.3em;
 }
+
 footer h4 {
    padding-top: 0.4em;
    padding-bottom: 0.4em;
@@ -167,6 +167,7 @@ footer a {
 h2 {
    padding-bottom: 0.7em;
 }
+
 article h3 {
    padding-bottom: 0.7em;
    padding-top: 0.7em;
@@ -178,15 +179,17 @@ article h3 {
    padding-top: 0.7em;
    width: 100%;
 }
+
 .om-nike-p-middle {
    padding-bottom: 2em;
 }
+
 .om-nike-p-middle p {
    padding-bottom: 0.7em;
 }
 
-.om-nike-middle-article-div-p p{
-padding-bottom: 1em;
+.om-nike-middle-article-div-p p {
+   padding-bottom: 1em;
 }
 
 .om-nike-h2 {
@@ -198,8 +201,8 @@ padding-bottom: 1em;
    width: 100%;
 }
 
-.kontakt-text p{
- padding-bottom: 0.7em;
+.kontakt-text p {
+   padding-bottom: 0.7em;
 }
 
 .remember-p {
@@ -214,156 +217,183 @@ padding-bottom: 1em;
    display: none;
 }
 
+a:hover {
+   color: whitesmoke;
+}
+
+
+
 /* Desktop Styling */
 @media screen and (min-width: 1024px) {
-.mobile {
-   display: none;
-}
+   .mobile {
+      display: none;
+   }
 
-.desktop  {
- display: flex;
- flex-direction: row;
- width: 100%;
-}
+   .desktop {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+   }
 
-header img {
-   padding-top: 1%;
-   padding-left: 5%;
-   width: 8%;
-   height: 50px;
-}
+   header img {
+      padding-top: 1%;
+      padding-left: 5%;
+      width: 8%;
+      height: 50px;
+   }
 
-.desktop ul {
-   position: relative;
-   display: flex;
-   list-style: none;
-   width: 108%;
-   /* left: 25%; */
-   transform: translate(-50% -50%);
-   align-items: center;
-   flex-wrap: wrap;
-   justify-content: center;
-   justify-content: center;
-   margin-left: -8%;
-}
+   .desktop ul {
+      position: relative;
+      display: flex;
+      list-style: none;
+      width: 108%;
+      /* left: 25%; */
+      transform: translate(-50% -50%);
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      justify-content: center;
+      margin-left: -16%;
+   }
 
-.desktop ul li {
-   margin-left: 50px;
-} 
+   .desktop ul li {
+      margin-left: 50px;
+   }
 
-.desktop ul li a{
-   text-decoration: none;
+   .desktop ul li a {
+      text-decoration: none;
 
-}
+   }
 
-.nike-logo-desktop {
-display: block;
-}
+   .nike-logo-desktop {
+      display: block;
+   }
 
-.nike-logo {
-   display: none;
-}
+   .nike-logo {
+      display: none;
+   }
 
-.images-section {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   padding-top: 1.5em;
-}
+   .images-section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      padding-top: 1.5em;
+   }
 
-.image-section {
-   width: 33%;
-}
-
-.wrapper {
-   width: 75%;
-   margin: 0 auto;
-}
-
-footer {
-   display: flex;
-   justify-content: space-evenly;
-}
-
-.footer-right-images img {
-   width: 30%;
-}
-
-.historie-nike-split {
-   display: flex;
-   margin-top: 2em;
-   /* margin-bottom: 2em; */
-}
-
-.half {
-   width: 50%;
-}
-
-.cortez-image {
-   padding-top: 0;
-   padding-bottom: 0;
-}
-
-article {
-   padding-top: 1%;
-}
-
-.om-nike-first {
-   display: flex;
-   flex-direction: row-reverse;
-}
-
-.nike-shop {
-   padding-top: 0;
-}
-.om-nike-text {
-   display: flex;
-   flex-direction: column;
-padding: 0.5em 1em 1em 1em;
-   width: 50%;
-   font-size: 15px;
-   margin-bottom: 0.5em;
-}
+   .image-section {
+      width: 33%;
+   }
 
 
-.om-nike-p-middle p {
-   /* padding-bottom: 0em; */
-}
+   .image-section img {
+      transition: all .2s ease-in-out; 
+   }
 
-.om-nike-middle {
-   display: flex;
-}
+   .image-section img:hover { 
+      transform: scale(1.1); 
+   border: 1px solid hotpink;
+      }
 
-.om-nike-middle-article-div-p {
-   width: 50%;
-}
+   .wrapper {
+      width: 75%;
+      margin: 0 auto;
+   }
+
+   footer {
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   .footer-right-images img {
+      width: 90%;
+   }
+
+   .historie-nike-split {
+      display: flex;
+      margin-top: 2em;
+      /* margin-bottom: 2em; */
+   }
+
+   .half {
+      width: 50%;
+   }
+
+   .cortez-image {
+      padding-top: 0;
+      padding-bottom: 0;
+   }
+
+   article {
+      padding-top: 1%;
+   }
+
+   .om-nike-first {
+      display: flex;
+      flex-direction: row-reverse;
+   }
+
+   .nike-shop {
+      padding-top: 0;
+   }
+
+   .om-nike-text {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5em 1em 1em 1em;
+      width: 50%;
+      font-size: 15px;
+      margin-bottom: 0.5em;
+   }
 
 
-.om-nike-middle-article-div-img {
-   width: 50%;
-}
+   .om-nike-p-middle p {
+      /* padding-bottom: 0em; */
+   }
 
-.om-nike-last {
-   display: flex;
-   flex-direction: row;
-   padding-top: 2em;
-}
+   .om-nike-middle {
+      display: flex;
+   }
 
-.om-nike-text-last {
-   width: 50%;
-   padding: 0.5em;
-   font-size: 15px;
-}
+   .om-nike-middle-article-div-p {
+      width: 50%;
+   }
 
-.kontakt-text {
-   width: 50%;
-   display: flex;
-   flex-direction: column;
 
-}
+   .om-nike-middle-article-div-img {
+      width: 50%;
+   }
 
-.kontakt-text p {
-   padding-bottom: 2em;
-}
+   .om-nike-last {
+      display: flex;
+      flex-direction: row;
+      padding-top: 2em;
+   }
+
+   .om-nike-text-last {
+      width: 50%;
+      padding: 0.5em;
+      font-size: 15px;
+   }
+
+   .kontakt-text {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+   }
+
+   .kontakt-text p {
+      padding-bottom: 2em;
+   }
+
+   .footer-right-images img {
+      transition: all .2s ease-in-out; 
+   }
+
+   .footer-right-images img:hover {
+      opacity: 0.75;
+      transform:translateY(-10px);
+      
+   }
 
 }
