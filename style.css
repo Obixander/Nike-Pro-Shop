@@ -87,7 +87,7 @@ header img {
    display: block;
 }
 
-.checkbox:checked {}
+
 
 /* Forside Styling */
 
@@ -95,6 +95,7 @@ header img {
 .forside-image {
    width: 100%;
 }
+
 
 .images-section {
    display: flex;
@@ -105,6 +106,10 @@ header img {
 .image-section {
    text-align: center;
    padding-bottom: 10%;
+}
+
+.image-section p {
+   padding-top: 2%;
 }
 
 article {
@@ -221,6 +226,13 @@ a:hover {
    color: whitesmoke;
 }
 
+footer a:hover {
+   color: black;
+}
+
+.footer-desktop-buttons {
+   display: none;
+}
 
 
 /* Desktop Styling */
@@ -282,6 +294,7 @@ a:hover {
 
    .image-section {
       width: 33%;
+      cursor: pointer;
    }
 
 
@@ -310,6 +323,7 @@ a:hover {
 
    .historie-nike-split {
       display: flex;
+      flex-direction: column;
       margin-top: 2em;
       /* margin-bottom: 2em; */
    }
@@ -395,5 +409,35 @@ a:hover {
       transform:translateY(-10px);
       
    }
+
+   .footer-right-links {
+      /* display: none; */
+   }
+
+   .footer-desktop-buttons {
+      display: none;
+      justify-content: space-evenly;
+      padding-top: 1em;
+
+   }
+
+.footer-desktop-buttons button{
+   padding: 0.5em 1em;
+   background-color: white;
+   transition: all .2s ease-in-out; 
+}
+
+.footer-desktop-buttons button:hover {
+   border: 3px solid hotpink;
+   transform:scale(1.1);
+} 
+
+   .footer-desktop-buttons a {
+      color: black;
+      text-decoration: none;
+      font-size: 1.2em;
+   }
+
+   
 
 }
